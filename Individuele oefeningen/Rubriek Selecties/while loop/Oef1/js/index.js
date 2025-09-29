@@ -1,7 +1,15 @@
-let getal = parseInt(window.prompt(" geef nog een getal in:"));
+let i = 1;
 let som = 0;
-while ( getal >= 0 ){
-    som = som + getal;
-    getal = parseInt(window.prompt(" geef nog een getal in:"));
+let deelGetal = 0;
+let getallen = parseInt(window.prompt("geef een getal in"));
+while (i <= getallen){
+    if (getallen > 0){
+        som = som + getallen ;
+        console.log(som);
+        deelGetal++;
+        i++
+        getallen = parseInt(window.prompt(`geef getal in:`));
+    }
 }
-console.log(som);
+console.log(`De totale som is ${som}`);
+console.log(`Het gemiddelde van de som is  ${som / deelGetal}`);
