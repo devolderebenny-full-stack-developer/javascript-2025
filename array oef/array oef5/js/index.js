@@ -10,11 +10,12 @@ for (let element of elementen)
     //hier onder maak je een is statement die kijkt of element gelijk is aan getal met == die controleert met niet op data type
      if (element == getal){
           alert(`je getal ${getal} zit in de array`);
-          //hier doe je teller ++ om de teleer te laten bij tellen iedere keer hij hier door loopt
+          //hier doe je teller ++ om de teller te laten bij tellen iedere keer hij hier door loopt
           teller++;
     }
 }
 // deze if kijkt of teller === 0 zoja geef je deze alert
-if(teller === 0){
+
+if(teller === 0) {
     alert(`je getal ${getal} zit niet in de array`);
 }
